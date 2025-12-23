@@ -1,0 +1,1077 @@
+[00:00:01.902] Server  LOG     ✓ Ready in 1369ms
+[00:00:02.622] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:05.853] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:22.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.549] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:13.127] Server  LOG     ✓ Compiled in 483ms
+[00:01:17.875] Server  LOG     ✓ Compiled in 80ms
+[00:01:23.106] Server  LOG     ✓ Compiled in 39ms
+[00:01:29.902] Server  LOG     ✓ Compiled in 42ms
+[00:01:35.088] Server  LOG     ✓ Compiled in 35ms
+[00:02:01.223] Server  LOG     ✓ Compiled in 38ms
+[00:02:02.567] Server  LOG     ✓ Compiled in 47ms
+[00:02:10.163] Server  LOG     ✓ Compiled in 37ms
+[00:02:10.889] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:10.889] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:15.976] Server  LOG     ✓ Compiled in 38ms
+[00:02:16.889] Browser ERROR   ./frontend/app/faculty/page.tsx:244:22
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     )}
+      |                      ^
+  245 |                   </div>
+  246 |
+  247 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:16.889] Browser ERROR   ./frontend/app/faculty/page.tsx:244:22
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     )}
+      |                      ^
+  245 |                   </div>
+  246 |
+  247 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:20.884] Browser ERROR   ./frontend/app/faculty/page.tsx:244:21
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     }
+      |                     ^
+  245 |                   </div>
+  246 |
+  247 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:20.884] Browser ERROR   ./frontend/app/faculty/page.tsx:244:21
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     }
+      |                     ^
+  245 |                   </div>
+  246 |
+  247 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:27.725] Server  LOG     ✓ Compiled in 29ms
+[00:02:27.893] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:27.893] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:48.891] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:48.891] Browser ERROR   ./frontend/app/faculty/page.tsx:232:23
+Parsing ecmascript source code failed
+  230 |                     {faculty.comingSoon ? (
+  231 |                       
+> 232 |                     ) : (
+      |                       ^
+  233 |                       <div className="relative">
+  234 |                         <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
+  235 |                           <img 
+
+Expected '</', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:54.247] Server  LOG     ✓ Compiled in 26ms
+[00:02:54.895] Browser ERROR   ./frontend/app/faculty/page.tsx:246:21
+Parsing ecmascript source code failed
+  244 |                         </div>
+  245 |                       </div>
+> 246 |                     }
+      |                     ^
+  247 |                   </div>
+  248 |
+  249 |                   {/* Top Corner Badge */}
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:54.895] Browser ERROR   ./frontend/app/faculty/page.tsx:246:21
+Parsing ecmascript source code failed
+  244 |                         </div>
+  245 |                       </div>
+> 246 |                     }
+      |                     ^
+  247 |                   </div>
+  248 |
+  249 |                   {/* Top Corner Badge */}
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:56.190] Server  LOG     ✓ Compiled in 30ms
+[00:02:56.885] Browser ERROR   ./frontend/app/faculty/page.tsx:245:21
+Parsing ecmascript source code failed
+  243 |                         </div>
+  244 |                       </div>
+> 245 |                     }
+      |                     ^
+  246 |                   </div>
+  247 |
+  248 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:02:56.885] Browser ERROR   ./frontend/app/faculty/page.tsx:245:21
+Parsing ecmascript source code failed
+  243 |                         </div>
+  244 |                       </div>
+> 245 |                     }
+      |                     ^
+  246 |                   </div>
+  247 |
+  248 |                   {/* Top Corner Badge */}
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:09.887] Browser ERROR   ./frontend/app/faculty/page.tsx:245:21
+Parsing ecmascript source code failed
+  243 |                         </div>
+  244 |                       </div>
+> 245 |                     }
+      |                     ^
+  246 |                   </div>
+  247 |
+  248 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:09.887] Browser ERROR   ./frontend/app/faculty/page.tsx:245:21
+Parsing ecmascript source code failed
+  243 |                         </div>
+  244 |                       </div>
+> 245 |                     }
+      |                     ^
+  246 |                   </div>
+  247 |
+  248 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:25.896] Browser ERROR   ./frontend/app/faculty/page.tsx:244:21
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     }
+      |                     ^
+  245 |                   </div>
+  246 |
+  247 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:25.896] Browser ERROR   ./frontend/app/faculty/page.tsx:244:21
+Parsing ecmascript source code failed
+  242 |                         </div>
+  243 |                       </div>
+> 244 |                     }
+      |                     ^
+  245 |                   </div>
+  246 |
+  247 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:28.897] Browser ERROR   ./frontend/app/faculty/page.tsx:243:21
+Parsing ecmascript source code failed
+  241 |                         </div>
+  242 |                       </div>
+> 243 |                     }
+      |                     ^
+  244 |                   </div>
+  245 |
+  246 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:28.898] Browser ERROR   ./frontend/app/faculty/page.tsx:243:21
+Parsing ecmascript source code failed
+  241 |                         </div>
+  242 |                       </div>
+> 243 |                     }
+      |                     ^
+  244 |                   </div>
+  245 |
+  246 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:30.896] Browser ERROR   ./frontend/app/faculty/page.tsx:242:21
+Parsing ecmascript source code failed
+  240 |                         </div>
+  241 |                       </div>
+> 242 |                     }
+      |                     ^
+  243 |                   </div>
+  244 |
+  245 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:30.896] Browser ERROR   ./frontend/app/faculty/page.tsx:242:21
+Parsing ecmascript source code failed
+  240 |                         </div>
+  241 |                       </div>
+> 242 |                     }
+      |                     ^
+  243 |                   </div>
+  244 |
+  245 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:32.894] Browser ERROR   ./frontend/app/faculty/page.tsx:241:21
+Parsing ecmascript source code failed
+  239 |                         </div>
+  240 |                       </div>
+> 241 |                     }
+      |                     ^
+  242 |                   </div>
+  243 |
+  244 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:32.895] Browser ERROR   ./frontend/app/faculty/page.tsx:241:21
+Parsing ecmascript source code failed
+  239 |                         </div>
+  240 |                       </div>
+> 241 |                     }
+      |                     ^
+  242 |                   </div>
+  243 |
+  244 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:36.885] Browser ERROR   ./frontend/app/faculty/page.tsx:240:21
+Parsing ecmascript source code failed
+  238 |                         </div>
+  239 |                       </div>
+> 240 |                     }
+      |                     ^
+  241 |                   </div>
+  242 |
+  243 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:36.885] Browser ERROR   ./frontend/app/faculty/page.tsx:240:21
+Parsing ecmascript source code failed
+  238 |                         </div>
+  239 |                       </div>
+> 240 |                     }
+      |                     ^
+  241 |                   </div>
+  242 |
+  243 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:38.885] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:38.885] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:47.897] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:47.897] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:49.895] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:49.895] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:52.890] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:52.890] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:55.883] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:03:55.884] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:02.894] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:02.894] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:04.897] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:04.897] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:07.886] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:07.886] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:15.890] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:15.890] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:18.889] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:18.889] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:19.888] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:19.888] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:21.607] Server  LOG     ✓ Compiled in 54ms
+[00:04:21.885] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:21.886] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:28.898] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:04:28.898] Browser ERROR   ./frontend/app/faculty/page.tsx:239:21
+Parsing ecmascript source code failed
+  237 |                         </div>
+  238 |                       </div>
+> 239 |                     }
+      |                     ^
+  240 |                   </div>
+  241 |
+  242 |                   
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./frontend/app/faculty/page.tsx [Client Component Browser]
+    ./frontend/app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./frontend/app/faculty/page.tsx [Client Component SSR]
+    ./frontend/app/faculty/page.tsx [Server Component]
+[00:06:23.032] Server  LOG     ✓ Compiled in 32ms
+[00:06:31.705] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:33.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:34.764] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:05.036] Server  LOG     ✓ Compiled in 31ms
+[00:07:23.663] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:39.771] Server  LOG     ✓ Compiled in 30ms
+[00:07:42.944] Server  LOG     ✓ Compiled in 30ms
+[00:07:49.181] Server  LOG     ✓ Compiled in 26ms
+[00:07:51.269] Server  LOG     ✓ Compiled in 26ms
+[00:07:52.403] Server  LOG     ✓ Compiled in 30ms
+[00:07:54.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:12.740] Server  LOG     ✓ Compiled in 38ms
+[00:08:21.997] Server  LOG     ✓ Compiled in 66ms
+[00:08:24.013] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:25.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:26.578] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
