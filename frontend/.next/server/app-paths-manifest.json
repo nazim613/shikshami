@@ -4,5 +4,6 @@
   "/contact/page": "app/contact/page.js",
   "/faculty/page": "app/faculty/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/success/page": "app/success/page.js"
 }

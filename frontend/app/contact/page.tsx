@@ -1,9 +1,10 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function ContactUs() {
-  const [scrolled, setScrolled] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -12,17 +13,11 @@ export default function ContactUs() {
     message: ''
   })
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const [searchQuery, setSearchQuery] = useState('')
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // Handle form submission
     console.log('Form submitted:', formData)
     alert('Thank you for contacting us! We will get back to you soon.')
   }
@@ -34,46 +29,97 @@ export default function ContactUs() {
     })
   }
 
+  const faqData = [
+    {
+      category: "About the Course & Pricing",
+      questions: [
+        {
+          q: "Is the price really just ₹199? Is there any hidden cost?",
+          a: "Yes! The price for Package 1 is exactly ₹199 (One-time payment). There are no monthly fees and no hidden charges. Our mission at Shikshami is to make quality education affordable for every student in India, which is why we keep our margins low and quality high."
+        },
+        {
+          q: "Why is the fee so low compared to other institutes?",
+          a: "We believe education shouldn't be a luxury. By using technology, we reach thousands of students at once, allowing us to slash costs. You get the same 'Kota-Level' teachers that charge ₹20,000 offline, but at the cost of a pizza!"
+        },
+        {
+          q: "Is this course valid for CBSE Boards 2026?",
+          a: "Absolutely. The entire curriculum is strictly based on the latest NCERT and CBSE Class 10 syllabus. Whether you are from CBSE or a State Board that follows NCERT (like UP Board English Medium), this course is perfect for you."
+        }
+      ]
+    },
+    {
+      category: "Classes & Doubts",
+      questions: [
+        {
+          q: "What if I miss a Live Class? (Package 3 Users)",
+          a: "No tension! All Live Classes are automatically recorded and uploaded to your dashboard within 2 hours. You can watch the recording anytime, anywhere, and as many times as you want."
+        },
+        {
+          q: "How can I ask doubts in the Live Class?",
+          a: "This is our best feature! In Package 3, we offer 'Two-Way Audio.' You can simply click the 'Raise Hand' button, unmute your mic, and speak directly to the teacher to ask your doubt—just like in an offline classroom."
+        },
+        {
+          q: "I am weak in Maths. Will I understand?",
+          a: "Yes. Our 'Concept Capsule' videos (in Package 2 & 3) are designed specifically for students who need to start from zero. Nazish Sir teaches every concept from the very basics in simple Hinglish."
+        }
+      ]
+    },
+    {
+      category: "Technical & Access",
+      questions: [
+        {
+          q: "Can I watch the videos on my Laptop/PC?",
+          a: "Yes! You can login to our website on your laptop/desktop for a big-screen experience. You can also use our Android App on your mobile. (Note: One account works on one device at a time)."
+        },
+        {
+          q: "Can I download the videos to watch offline?",
+          a: "Yes. In the mobile app, you can download video lectures and watch them later without using the internet (Offline Mode). This saves your mobile data!"
+        },
+        {
+          q: "What does 'Lifetime Access' mean?",
+          a: "It means once you buy the course, the videos and PDFs are yours until you finish your Class 10th exams. We don't expire your course in 1 month or 6 months."
+        }
+      ]
+    },
+    {
+      category: "Payments & Packages",
+      questions: [
+        {
+          q: "What is the difference between the ₹199 and ₹699 package?",
+          a: "₹199: Only Questions (PYQs) & Solutions. Good for practice.\n₹399: Questions + Chapter Explanations (Recorded). Good for learning.\n₹699 (Best Value): Everything above + Daily Live Classes + Free Study Material (Notes/Books)."
+        },
+        {
+          q: "Can I upgrade from ₹199 to ₹699 later?",
+          a: "Yes, you can! You just have to pay the remaining difference amount. Contact our support team, and we will help you upgrade instantly."
+        },
+        {
+          q: "Is the payment safe?",
+          a: "100% Safe. We use Razorpay, which is India's most trusted payment gateway. You can pay via UPI (GPay/PhonePe), Paytm, Debit Card, or Net Banking."
+        }
+      ]
+    },
+    {
+      category: "Parent's Questions",
+      questions: [
+        {
+          q: "My child gets distracted easily. How will you ensure they study?",
+          a: "Unlike boring recorded lectures, our Package 3 includes Live Interaction, Polls, and Quizzes. The teacher calls out names and keeps the energy high, ensuring students stay glued to the screen. Plus, the gamified app experience makes learning fun, not a burden."
+        }
+      ]
+    }
+  ]
+
+  const filteredFaqs = faqData.map(category => ({
+    ...category,
+    questions: category.questions.filter(faq =>
+      faq.q.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      faq.a.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })).filter(category => category.questions.length > 0)
+
   return (
     <div className="min-h-screen bg-stone-50">
-      {/* Sophisticated Navbar - Same as Home */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-md'
-      }`}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <div className="flex items-center gap-4">
-              <div className="relative">
-               <img src="/logo.png" alt="Shikshami Logo" className="w-15 h-15 object-contain" />
-              </div>
-              <div>
-                <div className="text-2xl font-serif font-bold text-gray-900">Shikshami</div>
-                <div className="text-xs text-gray-600 tracking-wider">CBSE Board Excellence</div>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <a href="/" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Home</a>
-              <a href="/#about" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">About</a>
-              <a href="/#curriculum" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Curriculum</a>
-              <a href="/#testimonials" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Success Stories</a>
-              <a href="/faculty" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Our Mentors</a>
-            </div>
-
-            {/* CTA */}
-            <div className="flex items-center gap-4">
-              <a href="#contact" className="hidden md:block text-sm font-semibold text-amber-700 hover:text-amber-800 transition-colors">
-                Contact
-              </a>
-              <button className="px-6 py-2.5 bg-amber-600 text-white text-sm font-semibold rounded hover:bg-amber-700 transition-all shadow-md hover:shadow-lg">
-                Enroll Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-16 bg-gradient-to-br from-amber-600 to-orange-700">
@@ -300,7 +346,7 @@ export default function ContactUs() {
                 </button>
               </div>
 
-              {/* Map Placeholder */}
+              {/* Map */}
               <div className="bg-white rounded-xl shadow-lg border-2 border-stone-200 p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Find Us on Map</h3>
                 <div className="aspect-video bg-stone-100 rounded-lg overflow-hidden">
@@ -358,34 +404,103 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Comprehensive FAQ Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-serif font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-600">Quick answers to common questions</p>
+            <div className="text-sm font-bold text-amber-700 uppercase tracking-wider mb-3">Got Questions?</div>
+            <h2 className="text-4xl font-serif font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600">
+              Everything you need to know about Shikshami courses, pricing, and learning experience
+            </p>
           </div>
 
-          <div className="space-y-4">
-            <details className="bg-stone-50 rounded-lg border-2 border-stone-200 p-6 cursor-pointer hover:border-amber-600 transition-all">
-              <summary className="font-bold text-gray-900 text-lg">What are your class timings?</summary>
-              <p className="text-gray-600 mt-4">We offer flexible timing options for both online and offline classes. Our live classes are typically conducted in the evening (5:00 PM - 8:00 PM) to accommodate school schedules. Weekend batches are also available.</p>
-            </details>
+          {/* Search Bar */}
+          <div className="mb-12">
+            <div className="relative max-w-2xl mx-auto">
+              <input
+                type="text"
+                placeholder="Search FAQs... (e.g., 'price', 'live class', 'download')"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-6 py-4 pr-12 rounded-xl border-2 border-stone-200 focus:border-amber-600 focus:outline-none transition-colors text-lg"
+              />
+              <svg className="w-6 h-6 text-gray-400 absolute right-4 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
 
-            <details className="bg-stone-50 rounded-lg border-2 border-stone-200 p-6 cursor-pointer hover:border-amber-600 transition-all">
-              <summary className="font-bold text-gray-900 text-lg">How can I book a demo class?</summary>
-              <p className="text-gray-600 mt-4">You can book a free demo class by calling us at +91 8923309560 or 1800 8899 565, or by filling out the contact form above. You can also visit our center during office hours.</p>
-            </details>
+          {/* FAQ Accordion by Category */}
+          <div className="space-y-8">
+            {filteredFaqs.map((category, catIndex) => (
+              <div key={catIndex}>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                  <div className="w-2 h-8 bg-amber-600 rounded-full"></div>
+                  {category.category}
+                </h3>
+                <div className="space-y-4">
+                  {category.questions.map((faq, index) => {
+                    const faqId = catIndex * 100 + index
+                    return (
+                      <div
+                        key={index}
+                        className="bg-stone-50 rounded-xl border-2 border-stone-200 overflow-hidden hover:border-amber-600 transition-all"
+                      >
+                        <button
+                          onClick={() => setOpenFaq(openFaq === faqId ? null : faqId)}
+                          className="w-full text-left p-6 flex items-start justify-between gap-4"
+                        >
+                          <span className="font-bold text-gray-900 text-lg pr-4">{faq.q}</span>
+                          <div className={`w-8 h-8 bg-amber-600 rounded-full flex items-center justify-center flex-shrink-0 transition-transform ${openFaq === faqId ? 'rotate-45' : ''}`}>
+                            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 6v12m6-6H6" />
+                            </svg>
+                          </div>
+                        </button>
+                        {openFaq === faqId && (
+                          <div className="px-6 pb-6">
+                            <div className="pt-4 border-t-2 border-stone-200">
+                              <p className="text-gray-700 leading-relaxed whitespace-pre-line">{faq.a}</p>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
 
-            <details className="bg-stone-50 rounded-lg border-2 border-stone-200 p-6 cursor-pointer hover:border-amber-600 transition-all">
-              <summary className="font-bold text-gray-900 text-lg">Do you offer online classes?</summary>
-              <p className="text-gray-600 mt-4">Yes! We offer both online and offline classes. Our online classes feature live interaction, recorded sessions, and comprehensive study materials accessible anytime.</p>
-            </details>
-
-            <details className="bg-stone-50 rounded-lg border-2 border-stone-200 p-6 cursor-pointer hover:border-amber-600 transition-all">
-              <summary className="font-bold text-gray-900 text-lg">What is your refund policy?</summary>
-              <p className="text-gray-600 mt-4">We offer a satisfaction guarantee. If you're not completely satisfied within the first 7 days, we'll provide a full refund. Please contact us for more details on our refund policy.</p>
-            </details>
+          {/* Still Have Questions CTA */}
+          <div className="mt-16 bg-gradient-to-br from-amber-600 to-orange-700 rounded-2xl p-8 lg:p-12 text-center text-white">
+            <h3 className="text-3xl font-bold mb-4">Still have questions?</h3>
+            <p className="text-xl text-amber-100 mb-8 max-w-2xl mx-auto">
+              Our friendly team is here to help. Chat with us on WhatsApp or call us directly!
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <a
+                href="https://wa.me/918923309560"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white text-amber-700 font-bold text-lg rounded-lg hover:bg-amber-50 transition-all shadow-lg"
+              >
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Chat with a Counselor
+              </a>
+              <a
+                href="tel:+918923309560"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-white/20 backdrop-blur-sm text-white font-bold text-lg rounded-lg border-2 border-white hover:bg-white/30 transition-all"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -410,65 +525,7 @@ export default function ContactUs() {
         </div>
       </section>
 
-      {/* Footer - Same as Home */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            {/* Brand */}
-            <div>
-              <div className="flex items-start">
-                <img src="/2.png" alt="Shikshami Logo" className="w-48 h-auto object-contain" />
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Our Mentors</a></li>
-                <li><a href="/#testimonials" className="text-gray-400 hover:text-white transition-colors">Success Stories</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              </ul>
-            </div>
-
-            {/* Courses */}
-            <div>
-              <h4 className="font-bold mb-4">Courses</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Class 10 CBSE</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Mathematics</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Science</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Social Science</a></li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="text-gray-400">
-                  Aligarh, Uttar Pradesh
-                </li>
-                <li className="text-gray-400">
-                  hello@shikshami.in
-                </li>
-                <li className="text-gray-400">
-                  18008899565 / 8923309560
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© 2025 Shikshami Educational Services. All rights reserved. | Crafted by IT Solutions Experts</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
@@ -479,26 +536,6 @@ export default function ContactUs() {
         
         * {
           font-family: 'Inter', sans-serif;
-        }
-
-        details summary {
-          list-style: none;
-        }
-        
-        details summary::-webkit-details-marker {
-          display: none;
-        }
-        
-        details summary::after {
-          content: '+';
-          float: right;
-          font-size: 1.5rem;
-          font-weight: bold;
-          color: #d97706;
-        }
-        
-        details[open] summary::after {
-          content: '−';
         }
       `}</style>
     </div>

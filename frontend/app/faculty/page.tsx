@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function OurMentors() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,7 +19,7 @@ export default function OurMentors() {
   const facultyData = [
     {
       id: 1,
-      name: 'Nazish Sir',
+      name: 'Nazish ',
       subject: 'Mathematics',
       experience: '12+ Years',
       vibe: "The final boss of Maths. Nazish Sir has been crushing board phobias for over a decade. He doesn't just teach formulas; he gives you the cheat codes to unlock 95+ without the stress.",
@@ -27,7 +29,7 @@ export default function OurMentors() {
     },
     {
       id: 2,
-      name: 'Azhar Sir',
+      name: 'Azhar ',
       subject: 'Physics',
       experience: '8+ Years',
       vibe: "Forget dry theory dumps. Azhar sir connects Physics to real life (fr fr). He makes sure your concepts are stronger than your WiFi connection. Numericals? Too easy.",
@@ -37,7 +39,7 @@ export default function OurMentors() {
     },
     {
       id: 3,
-      name: 'Salman Sir',
+      name: 'Salman ',
       subject: 'Chemistry',
       experience: '6+ Years',
       vibe: "The reaction king. He knows balancing equations gives you a headache, so he drops the simplest tricks to fix it. 6 years of making sure you don't blow up your boards score.",
@@ -47,7 +49,7 @@ export default function OurMentors() {
     },
     {
       id: 4,
-      name: 'Kuldeep Sir',
+      name: 'Kuldeep ',
       subject: 'Biology',
       experience: '9+ Years',
       vibe: "Your Bio hack for the boards. Kuldeep sir turns confusing NCERT text into crystal clear visuals. He makes sure 'Life Processes' doesn't drain the life out of you.",
@@ -57,7 +59,7 @@ export default function OurMentors() {
     },
     {
       id: 5,
-      name: 'Shagun Sir',
+      name: 'Shagun ',
       subject: 'History & Political Science',
       experience: '6+ Years',
       vibe: "No snooze-fests allowed. Shagun sir teaches History like a gripping Netflix series and Pol Sci like a rap battle. SST is actually interesting now. No cap.",
@@ -67,7 +69,7 @@ export default function OurMentors() {
     },
     {
       id: 6,
-      name: 'Huzaifa Sir',
+      name: 'Huzaifa ',
       subject: 'Economics & Geography',
       experience: '4+ Years',
       vibe: "The map master and money-mindset guy. He brings fresh energy to boring Geo chapters and makes Economics actually make sense for the real world. Get ready to score big.",
@@ -80,44 +82,7 @@ export default function OurMentors() {
 
   return (
     <div className="min-h-screen bg-stone-50">
-      {/* Sophisticated Navbar - Same as Home */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-md'
-      }`}>
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <div className="flex items-center gap-4">
-              <div className="relative">
-               <img src="/logo.png" alt="Shikshami Logo" className="w-15 h-15 object-contain" />
-              </div>
-              <div>
-                <div className="text-2xl font-serif font-bold text-gray-900">Shikshami</div>
-                <div className="text-xs text-gray-600 tracking-wider">CBSE Board Excellence</div>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <a href="/" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Home</a>
-              <a href="/#about" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">About</a>
-              <a href="/#curriculum" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Curriculum</a>
-              <a href="/#testimonials" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Success Stories</a>
-              <a href="/faculty" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">Our Mentors</a>
-            </div>
-
-            {/* CTA */}
-            <div className="flex items-center gap-4">
-              <a href="/contact" className="hidden md:block text-sm font-semibold text-gray-700 hover:text-amber-700 transition-colors">
-                Contact
-              </a>
-              <button className="px-6 py-2.5 bg-amber-600 text-white text-sm font-semibold rounded hover:bg-amber-700 transition-all shadow-md hover:shadow-lg">
-                Enroll Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header/>
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-amber-600 to-orange-700 overflow-hidden">
@@ -373,65 +338,7 @@ export default function OurMentors() {
         </div>
       </section>
 
-      {/* Footer - Same as Home */}
-      <footer className="bg-gray-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            {/* Brand */}
-            <div>
-              <div className="flex items-start">
-                <img src="/2.png" alt="Shikshami Logo" className="w-48 h-auto object-contain" />
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/mentors" className="text-gray-400 hover:text-white transition-colors">Our Mentors</a></li>
-                <li><a href="/#testimonials" className="text-gray-400 hover:text-white transition-colors">Success Stories</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-              </ul>
-            </div>
-
-            {/* Courses */}
-            <div>
-              <h4 className="font-bold mb-4">Courses</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Class 10 CBSE</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Mathematics</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Science</a></li>
-                <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Social Science</a></li>
-              </ul>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <h4 className="font-bold mb-4">Contact</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="text-gray-400">
-                  Aligarh, Uttar Pradesh
-                </li>
-                <li className="text-gray-400">
-                  hello@shikshami.in
-                </li>
-                <li className="text-gray-400">
-                  18008899565 / 8923309560
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>© 2025 Shikshami Educational Services. All rights reserved. | Crafted by IT Solutions Experts</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
