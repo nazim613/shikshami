@@ -23,7 +23,7 @@ export default function OurMentors() {
       subject: 'Mathematics',
       experience: '12+ Years',
       vibe: "The final boss of Maths. Nazish Sir has been crushing board phobias for over a decade. He doesn't just teach formulas; he gives you the cheat codes to unlock 95+ without the stress.",
-      image: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&crop=faces',
+      image: '/sir4.png',
       gradient: 'from-blue-500 to-cyan-500',
       accentColor: 'bg-blue-500'
     },
@@ -33,7 +33,7 @@ export default function OurMentors() {
       subject: 'Physics',
       experience: '8+ Years',
       vibe: "Forget dry theory dumps. Azhar sir connects Physics to real life (fr fr). He makes sure your concepts are stronger than your WiFi connection. Numericals? Too easy.",
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces',
+      image: '/sir1.png',
       gradient: 'from-purple-500 to-pink-500',
       accentColor: 'bg-purple-500'
     },
@@ -43,7 +43,7 @@ export default function OurMentors() {
       subject: 'Chemistry',
       experience: '6+ Years',
       vibe: "The reaction king. He knows balancing equations gives you a headache, so he drops the simplest tricks to fix it. 6 years of making sure you don't blow up your boards score.",
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces',
+      image: '/sir3.png',
       gradient: 'from-green-500 to-emerald-500',
       accentColor: 'bg-green-500'
     },
@@ -53,7 +53,7 @@ export default function OurMentors() {
       subject: 'Biology',
       experience: '9+ Years',
       vibe: "Your Bio hack for the boards. Kuldeep sir turns confusing NCERT text into crystal clear visuals. He makes sure 'Life Processes' doesn't drain the life out of you.",
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces',
+      image: 'sir6.png',
       gradient: 'from-teal-500 to-cyan-500',
       accentColor: 'bg-teal-500'
     },
@@ -63,7 +63,7 @@ export default function OurMentors() {
       subject: 'History & Political Science',
       experience: '6+ Years',
       vibe: "No snooze-fests allowed. Shagun sir teaches History like a gripping Netflix series and Pol Sci like a rap battle. SST is actually interesting now. No cap.",
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=faces',
+      image: 'sir2.png',
       gradient: 'from-orange-500 to-red-500',
       accentColor: 'bg-orange-500'
     },
@@ -73,7 +73,7 @@ export default function OurMentors() {
       subject: 'Economics & Geography',
       experience: '4+ Years',
       vibe: "The map master and money-mindset guy. He brings fresh energy to boring Geo chapters and makes Economics actually make sense for the real world. Get ready to score big.",
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=faces',
+      image: '/sir5.png',
       gradient: 'from-amber-500 to-yellow-500',
       accentColor: 'bg-amber-500'
     }
@@ -163,93 +163,78 @@ export default function OurMentors() {
 
           {/* Gaming Card Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {facultyData.map((faculty, index) => (
-              <div
-                key={faculty.id}
-                onMouseEnter={() => setHoveredCard(faculty.id)}
-                onMouseLeave={() => setHoveredCard(null)}
-                className={`group relative bg-white rounded-2xl overflow-hidden shadow-lg border-2 transition-all duration-500 cursor-pointer ${
-                  hoveredCard === faculty.id ? 'border-amber-500 shadow-2xl transform scale-105 z-10' : 'border-stone-200'
-                }`}
-                style={{
-                  animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                }}
-              >
-                {/* Card Header with Gradient */}
-                <div className={`relative h-48 bg-gradient-to-br ${faculty.gradient} overflow-hidden`}>
-                  {/* Animated Background Pattern */}
-                  <div className="absolute inset-0 opacity-20">
-                    <div className="absolute inset-0" style={{
-                      backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.1) 10px, rgba(255,255,255,.1) 20px)',
-                    }}></div>
-                  </div>
+  {facultyData.map((faculty, index) => (
+    <div
+      key={faculty.id}
+      onMouseEnter={() => setHoveredCard(faculty.id)}
+      onMouseLeave={() => setHoveredCard(null)}
+      className={`group relative bg-white rounded-2xl overflow-hidden shadow-lg border-2 transition-all duration-500 cursor-pointer ${
+        hoveredCard === faculty.id ? 'border-amber-500 shadow-2xl transform scale-105 z-10' : 'border-stone-200'
+      }`}
+      style={{
+        animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
+      }}
+    >
+      {/* Profile Image - Full Width */}
+      <div className="relative h-80 overflow-hidden bg-gradient-to-br from-stone-100 to-stone-50">
+        <img 
+          src={faculty.image || ''} 
+          alt={faculty.name}
+          className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+        />
+        {/* Gradient Overlay at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-orange-400/10 to-transparent"></div>
+      </div>
 
-                                    {/* Profile Image */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="relative">
-                      <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:scale-110 transition-transform duration-500">
-                        <img 
-                          src={faculty.image || ''} 
-                          alt={faculty.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      
-                    </div>
-                  </div>
-
-                  
-                </div>
-
-                {/* Card Body */}
-                <div className="p-6">
-                  {/* Name & Title */}
-                  <div className="text-center mb-4">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-1 group-hover:text-amber-600 transition-colors">
-                      {faculty.name}
-                    </h3>
-                    <div className={`inline-block px-3 py-1  bg-opacity-10 rounded-full mb-2`}>
-                      <span className={`text-sm font-bold text-black`}>
-                        {faculty.experience}
-                      </span>
-                    </div>
-                    <p className="text-sm font-semibold text-gray-700">
-                      {faculty.subject}
-                    </p>
-                  </div>
-
-                  {/* Divider */}
-                  <div className={`h-1 bg-gradient-to-r ${faculty.gradient} rounded-full mb-4 group-hover:scale-105 transition-transform`}></div>
-
-                  {/* The Vibe */}
-                  <div className="text-sm text-gray-600 leading-relaxed">
-                    <p className="italic">&ldquo;{faculty.vibe}&rdquo;</p>
-                  </div>
-
-                  {/* Stats Bar */}
-                  <div className="mt-6 pt-4 border-t border-stone-200">
-                    <div className="flex items-center justify-between text-xs">
-                      <div className="flex items-center gap-1">
-                        <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                        </svg>
-                        <span className="font-bold text-gray-700">4.9/5 Rating</span>
-                      </div>
-                      <div className="flex items-center gap-1 text-gray-600">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                        </svg>
-                        <span className="font-semibold"> Students</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Hover Glow Effect */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${faculty.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}></div>
-              </div>
-            ))}
+      {/* Card Body */}
+      <div className="p-6">
+        {/* Name & Title */}
+        <div className="text-center mb-4">
+          <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-amber-600 transition-colors">
+            {faculty.name}
+          </h3>
+          <div className="inline-block px-3 py-1 bg-amber-100 rounded-full mb-2">
+            <span className="text-sm font-bold text-amber-800">
+              {faculty.experience}
+            </span>
           </div>
+          <p className="text-sm font-semibold text-gray-700">
+            {faculty.subject}
+          </p>
+        </div>
+
+        {/* Divider */}
+        <div className={`h-1 bg-gradient-to-r ${faculty.gradient} rounded-full mb-4 group-hover:scale-105 transition-transform`}></div>
+
+        {/* The Vibe */}
+        <div className="text-sm text-gray-600 leading-relaxed">
+          <p className="italic">&ldquo;{faculty.vibe}&rdquo;</p>
+        </div>
+
+        {/* Stats Bar */}
+        <div className="mt-6 pt-4 border-t border-stone-200">
+          <div className="flex items-center justify-between text-xs">
+            <div className="flex items-center gap-1">
+              <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span className="font-bold text-gray-700">4.9/5</span>
+            </div>
+            <div className="flex items-center gap-1 text-gray-600">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              </svg>
+              <span className="font-semibold">5000+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hover Glow Effect */}
+      <div className={`absolute inset-0 bg-gradient-to-br  opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}></div>
+    </div>
+  ))}
+</div>
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">

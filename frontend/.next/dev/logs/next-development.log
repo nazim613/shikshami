@@ -1,16 +1,326 @@
-[00:00:07.331] Server  LOG     ✓ Ready in 5.5s
-[00:00:24.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:36.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:53.197] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:50.900] Server  LOG     ✓ Compiled in 204ms
-[00:04:54.429] Server  LOG     ✓ Compiled in 251ms
-[00:05:13.068] Server  LOG     ✓ Compiled in 270ms
-[00:05:15.934] Server  LOG     ✓ Compiled in 204ms
-[00:05:51.633] Server  LOG     ✓ Compiled in 378ms
-[00:06:00.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:27.883] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:06:33.421] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:08:56.309] Server  LOG     ✓ Compiled in 190ms
-[00:09:04.453] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:25.779] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:29.907] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.626] Server  LOG     ✓ Ready in 7s
+[00:00:53.058] Server  LOG     ○ Compiling / ...
+[00:00:55.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:42.201] Server  LOG     ✓ Compiled in 345ms
+[00:07:03.891] Server  LOG     ✓ Compiled in 363ms
+[00:16:02.591] Server  LOG     ✓ Compiled in 289ms
+[00:16:03.676] Browser ERROR   uncaughtError: ReferenceError: Cannot access 'testimonials' before initialization
+[00:16:04.678] Server  LOG     ✓ Compiled in 327ms
+[00:16:04.712] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:16:05.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:58.147] Server  LOG     ✓ Compiled in 319ms
+[00:19:02.363] Server  LOG     ✓ Compiled in 245ms
+[00:19:12.745] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:06.719] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:50.633] Server  LOG     ✓ Compiled in 281ms
+[00:48:53.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:49:12.193] Server  LOG     ✓ Compiled in 260ms
+[00:49:20.283] Server  LOG     ✓ Compiled in 210ms
+[00:49:32.851] Server  LOG     ✓ Compiled in 278ms
+[00:49:32.965] Browser ERROR   ./app/faculty/page.tsx:201:17
+Parsing ecmascript source code failed
+  199 |                 </div>
+  200 |
+> 201 |                 {/* Card Body */}
+      |                 ^
+  202 |                 <div className="p-6">
+  203 |                   {/* Name & Title */}
+  204 |                   <div className="text-center mb-4">
+
+Expected '</', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./app/faculty/page.tsx [Client Component Browser]
+    ./app/faculty/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/faculty/page.tsx [Client Component SSR]
+    ./app/faculty/page.tsx [Server Component]
+[00:49:37.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:50:09.874] Server  LOG     ✓ Compiled in 418ms
+[00:50:14.067] Server  LOG     ✓ Compiled in 326ms
+[00:51:26.653] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:51:54.927] Server  LOG     ✓ Compiled in 292ms
+[00:52:09.153] Server  LOG     ✓ Compiled in 371ms
+[00:52:31.884] Server  LOG     ✓ Compiled in 256ms
+[00:52:35.177] Server  LOG     ✓ Compiled in 327ms
+[00:52:36.943] Server  LOG     ✓ Compiled in 314ms
+[00:52:39.743] Server  LOG     ✓ Compiled in 196ms
+[00:52:42.416] Server  LOG     ✓ Compiled in 304ms
+[00:52:55.449] Server  LOG     ✓ Compiled in 278ms
+[00:52:56.592] Server  LOG     ✓ Compiled in 303ms
+[00:54:26.494] Server  LOG     ✓ Compiled in 341ms
+[00:54:33.239] Server  LOG     ✓ Compiled in 278ms
+[00:59:48.672] Server  LOG     ✓ Compiled in 336ms
+[01:01:36.730] Server  LOG     ✓ Compiled in 187ms
+[01:02:49.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:06:40.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:15.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:07:59.784] Server  LOG     ✓ Compiled in 262ms
+[01:08:03.692] Server  LOG     ✓ Compiled in 164ms
+[01:08:07.120] Server  LOG     ✓ Compiled in 214ms
+[01:08:09.717] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:08:21.906] Server  LOG     ✓ Compiled in 144ms
+[01:08:26.272] Server  LOG     ✓ Compiled in 214ms
+[01:08:30.362] Server  LOG     ✓ Compiled in 193ms
+[01:08:32.501] Server  LOG     ✓ Compiled in 217ms
+[01:08:34.111] Server  LOG     ✓ Compiled in 147ms
+[01:08:36.948] Server  LOG     ✓ Compiled in 315ms
+[01:08:48.129] Server  LOG     ✓ Compiled in 202ms
+[01:08:52.755] Server  LOG     ✓ Compiled in 310ms
+[01:08:57.361] Server  LOG     ✓ Compiled in 146ms
+[01:08:59.664] Server  LOG     ✓ Compiled in 210ms
+[01:09:07.382] Server  LOG     ✓ Compiled in 193ms
+[01:09:09.006] Server  LOG     ✓ Compiled in 176ms
+[01:09:19.428] Server  LOG     ✓ Compiled in 255ms
+[01:09:22.125] Server  LOG     ✓ Compiled in 314ms
+[01:09:28.727] Server  LOG     ✓ Compiled in 236ms
+[01:09:33.588] Server  LOG     ✓ Compiled in 205ms
+[01:09:36.348] Server  LOG     ✓ Compiled in 342ms
+[01:09:40.754] Server  LOG     ✓ Compiled in 258ms
+[01:10:04.632] Server  LOG     ✓ Compiled in 227ms
+[01:10:08.112] Server  LOG     ✓ Compiled in 209ms
+[01:10:10.292] Server  LOG     ✓ Compiled in 273ms
+[01:10:20.460] Server  LOG     ✓ Compiled in 152ms
+[01:10:22.517] Server  LOG     ✓ Compiled in 318ms
+[01:10:28.042] Server  LOG     ✓ Compiled in 303ms
+[01:10:32.955] Server  LOG     ✓ Compiled in 273ms
+[01:10:35.136] Server  LOG     ✓ Compiled in 290ms
+[01:10:38.069] Server  LOG     ✓ Compiled in 349ms
+[01:10:46.016] Server  LOG     ✓ Compiled in 339ms
+[01:10:56.792] Server  LOG     ✓ Compiled in 305ms
+[01:11:01.156] Server  LOG     ✓ Compiled in 239ms
+[01:11:02.222] Server  LOG     ✓ Compiled in 205ms
+[01:11:06.442] Server  LOG     ✓ Compiled in 290ms
+[01:11:09.165] Server  LOG     ✓ Compiled in 211ms
+[01:11:11.882] Server  LOG     ✓ Compiled in 322ms
+[01:11:23.345] Server  LOG     ✓ Compiled in 277ms
+[01:11:27.394] Server  LOG     ✓ Compiled in 233ms
+[01:11:41.235] Server  LOG     ✓ Compiled in 235ms
+[01:11:45.040] Server  LOG     ✓ Compiled in 202ms
+[01:11:52.270] Server  LOG     ✓ Compiled in 296ms
+[01:12:01.312] Server  LOG     ✓ Compiled in 169ms
+[01:12:03.936] Server  LOG     ✓ Compiled in 242ms
+[01:12:16.742] Server  LOG     ✓ Compiled in 267ms
+[01:12:23.303] Server  LOG     ✓ Compiled in 232ms
+[01:13:21.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:10.247] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:12.042] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:13.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:34.962] Server  LOG     ✓ Compiled in 266ms
+[01:15:50.306] Server  LOG     ✓ Compiled in 219ms
+[01:15:55.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:15:58.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:16:26.984] Server  LOG     ✓ Compiled in 157ms
+[01:16:30.222] Server  LOG     ✓ Compiled in 181ms
+[01:17:56.566] Server  LOG     ✓ Compiled in 217ms
+[01:17:59.376] Server  LOG     ✓ Compiled in 230ms
+[01:18:04.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:09.164] Server  LOG     ✓ Compiled in 204ms
+[01:18:11.222] Server  LOG     ✓ Compiled in 180ms
+[01:18:14.630] Server  LOG     ✓ Compiled in 248ms
+[01:18:31.707] Server  LOG     ✓ Compiled in 221ms
+[01:18:34.561] Server  LOG     ✓ Compiled in 221ms
+[01:18:51.272] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:54.310] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:18:55.492] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:04.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:14.516] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:21.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:26:41.790] Server  LOG     ✓ Compiled in 460ms
+[01:26:42.677] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:27:10.672] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:27:15.681] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:27:19.670] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:27:36.672] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:27:38.679] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:32:18.134] Server  LOG     ✓ Compiled in 373ms
+[01:32:18.671] Browser ERROR   ./app/contact/page.tsx:1:10
+Ecmascript file had an error
+> 1 | import { useState } from 'react'
+    |          ^^^^^^^^
+  2 |
+  3 | export default function ContactUs() {
+  4 |   const [formData, setFormData] = useState({
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[01:32:32.851] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:32:36.153] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:32:38.994] Browser ERROR   ./app/contact/page.tsx:404:19
+Parsing ecmascript source code failed
+  402 |                     rel="noopener noreferrer"
+  403 |                     className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all"
+> 404 |                   >
+      |                   ^
+  405 |                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+  406 |                       <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  407 |                     </svg>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+[01:32:40.393] Server  LOG     ✓ Compiled in 224ms
+[01:48:54.464] Server  LOG     ✓ Compiled in 347ms
+[01:49:00.207] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:55.464] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:59.787] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:27:08.390] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:27:35.760] Server  LOG     ✓ Compiled in 84ms
+[02:27:43.017] Server  LOG     ✓ Compiled in 80ms
+[02:27:43.123] Browser ERROR   ./app/contact/page.tsx:548:22
+Parsing ecmascript source code failed
+  546 |           </p>
+  547 |           <div className="flex flex-wrap gap-4 justify-center">
+> 548 |             <a href= className="px-10 py-5 bg-white text-amber-700 rounded font-bold text-lg shadow-2xl hover:bg-amber-50 transition-all">
+      |                      ^^^^^^^^^
+  549 |               Enroll Now
+  550 |             </a>
+  551 |             <a href="tel:+918923309560" className="px-10 py-5 bg-transparent text-white rounded font-bold text-lg border-2 border-white hover:bg-white/10 transition-all">
+
+Expected '</', got 'className'
+
+Import traces:
+  Client Component Browser:
+    ./app/contact/page.tsx [Client Component Browser]
+    ./app/contact/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/contact/page.tsx [Client Component SSR]
+    ./app/contact/page.tsx [Server Component]
+[02:27:50.614] Server  LOG     ✓ Compiled in 81ms
+[02:28:03.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:06.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:25.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:30.021] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:33.111] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:36.260] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:43.276] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:47.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:49.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:52.108] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:56.248] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:57.118] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:28:58.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:00.782] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:02.075] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:03.351] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:07.181] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:08.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:11.874] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:14.394] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:29:32.940] Server  LOG     ✓ Compiled in 71ms
+[02:29:37.300] Server  LOG     ✓ Compiled in 83ms
+[02:29:39.214] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:30:32.825] Server  LOG     ✓ Compiled in 130ms
+[02:30:37.506] Server  LOG     ✓ Compiled in 111ms
+[02:30:37.677] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
+
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true href href true href
+[02:30:39.422] Server  LOG     ✓ Compiled in 120ms
+[02:30:42.391] Server  LOG     ✓ Compiled in 95ms
+[02:30:51.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:30:52.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:30:59.751] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:00.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:37.858] Server  LOG     ✓ Compiled in 104ms
+[02:31:42.122] Server  LOG     ✓ Compiled in 94ms
+[02:31:47.577] Server  LOG     ✓ Compiled in 112ms
+[02:31:53.248] Server  LOG     ✓ Compiled in 100ms
+[02:31:57.132] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:31:58.729] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:01.695] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:03.791] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:13.267] Server  LOG     ✓ Compiled in 88ms
+[02:32:15.308] Server  LOG     ✓ Compiled in 88ms
+[02:32:16.680] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:32:18.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:35:36.318] Server  LOG     ✓ Compiled in 116ms
+[02:35:41.109] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:36:18.574] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:36:36.576] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:41:17.740] Server  LOG     ✓ Compiled in 174ms
+[02:41:32.269] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[02:46:45.321] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:46:59.040] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:47:24.862] Server  LOG     ✓ Compiled in 189ms

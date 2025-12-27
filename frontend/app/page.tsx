@@ -53,7 +53,7 @@ export default function ShikshamiLanding() {
       title: 'Expert Guidance',
       description: 'Experienced mentors',
       gradient: 'from-orange-900/80 via-amber-900/70 to-transparent',
-      image: '/3f.jpg'
+      image: '/3ff.png'
     },
     {
       title: 'Success Stories',
@@ -145,19 +145,36 @@ export default function ShikshamiLanding() {
       name: 'Priya Sharma',
       score: '96.8%',
       quote: 'The structured approach and daily practice helped me secure 96.8%. The mentors were always available for doubt clearing.',
-      school: 'Delhi Public School'
+      school: 'Delhi Public School',
+      stars: 5
     },
     {
       name: 'Rahul Verma',
       score: '94.2%',
       quote: 'I was struggling with Mathematics, but the one-shot lectures and PYQs made everything clear. Highly recommended!',
-      school: 'Kendriya Vidyalaya'
+      school: 'Kendriya Vidyalaya',
+      stars: 5
     },
     {
       name: 'Ananya Gupta',
       score: '97.4%',
       quote: 'Best investment for board exam preparation. The live classes and study material were top-notch.',
-      school: 'St. Xavier\'s School'
+      school: 'St. Xavier\'s School',
+      stars: 4.5
+    },
+    {
+      name: 'Arjun Patel',
+      score: '92.6%',
+      quote: 'Great content and helpful teachers. The recorded sessions were useful for revision. Would have liked more interactive doubt sessions.',
+      school: 'Ryan International School',
+      stars: 4
+    },
+    {
+      name: 'Sneha Reddy',
+      score: '95.8%',
+      quote: 'The test series and detailed solutions really boosted my confidence. Chemistry became my strongest subject thanks to the faculty here!',
+      school: 'Modern School',
+      stars: 4.5
     }
   ]
 
@@ -171,19 +188,23 @@ export default function ShikshamiLanding() {
   const highlights = [
     {
       title: 'Comprehensive Study Material',
-      description: 'Curated resources covering entire CBSE syllabus'
+      description: 'Curated resources covering entire CBSE syllabus',
+      emoji: '📚'
     },
     {
       title: 'Targeted Practice',
-      description: '10 years of solved previous year questions'
+      description: '10 years of solved previous year questions',
+      emoji: '🎯'
     },
     {
       title: 'Expert Faculty',
-      description: 'Learn from teachers with 15+ years experience'
+      description: 'Learn from teachers with 15+ years experience',
+      emoji: '👨‍🏫'
     },
     {
       title: 'Progress Tracking',
-      description: 'Regular assessments and personalized feedback'
+      description: 'Regular assessments and personalized feedback',
+      emoji: '📈'
     }
   ]
 
@@ -230,7 +251,7 @@ export default function ShikshamiLanding() {
                 <h1 className="text-5xl lg:text-7xl font-serif font-bold leading-[1.1] text-white drop-shadow-2xl">
                   Skyrocket Your
                   <span className="block mt-2 text-amber-400">Board Exam Results</span>
-                  <span className="block mt-2 text-white">In Just 60 Days</span>
+                  <span className="block mt-2 text-white">In Just 50 Days</span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-white/95 leading-relaxed max-w-2xl drop-shadow-lg font-medium">
                   Join India&apos;s most trusted CBSE crash course. Proven methodology.
@@ -262,9 +283,9 @@ export default function ShikshamiLanding() {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-6">
-                <button className="px-10 py-5 bg-amber-600 text-white font-bold text-lg rounded shadow-2xl hover:bg-amber-700 hover:shadow-amber-600/50 transition-all transform hover:scale-105">
+                <a href='/signin' className="px-10 py-5 bg-amber-600 text-white font-bold text-lg rounded shadow-2xl hover:bg-amber-700 hover:shadow-amber-600/50 transition-all transform hover:scale-105">
                   Start Free Trial →
-                </button>
+                </a>
                 <button className="px-10 py-5 bg-white/95 backdrop-blur-sm text-gray-900 font-bold text-lg rounded shadow-xl hover:shadow-2xl border-2 border-amber-200 hover:border-amber-600 transition-all">
                   Download Brochure
                 </button>
@@ -329,9 +350,7 @@ export default function ShikshamiLanding() {
             {highlights.map((item, index) => (
               <div key={index} className="bg-white rounded-xl p-8 shadow-lg border-2 border-stone-200 hover:border-amber-600 hover:shadow-xl transition-all">
                 <div className="w-14 h-14 bg-amber-100 rounded-xl flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
+                  <span className="text-4xl">{item.emoji}</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
@@ -749,19 +768,19 @@ export default function ShikshamiLanding() {
             </div>
 
             <div className="order-1 md:order-2">
-  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-600">
-    <div className="aspect-video bg-gray-900">
-      <iframe
-        src="https://drive.google.com/file/d/1uvSnfj7JqSKnBLsQe2IV1AHy1Jm3lpdK/preview"
-        width="100%"
-        height="100%"
-        allow="autoplay"
-        allowFullScreen
-        className="w-full h-full border-0"
-      ></iframe>
-    </div>
-  </div>
-</div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-600">
+                <div className="aspect-video bg-gray-900">
+                  <iframe
+                    src="https://drive.google.com/file/d/1uvSnfj7JqSKnBLsQe2IV1AHy1Jm3lpdK/preview"
+                    width="100%"
+                    height="100%"
+                    allow="autoplay"
+                    allowFullScreen
+                    className="w-full h-full border-0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -816,7 +835,7 @@ export default function ShikshamiLanding() {
             </p>
           </div>
 
-         
+
 
           {/* Text Testimonials Carousel */}
           <div className="relative max-w-4xl mx-auto">
@@ -846,12 +865,28 @@ export default function ShikshamiLanding() {
                         &ldquo;{testimonial.quote}&rdquo;
                       </blockquote>
                       <div className="flex gap-1 mt-6">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <svg key={star} className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                        ))}
-                      </div>
+  {[1, 2, 3, 4, 5].map((star) => (
+    <svg 
+      key={star} 
+      className={`w-5 h-5 ${star <= Math.floor(testimonial.stars) ? 'text-amber-500' : star === Math.ceil(testimonial.stars) && testimonial.stars % 1 !== 0 ? 'text-amber-500' : 'text-gray-300'}`}
+      fill="currentColor" 
+      viewBox="0 0 20 20"
+    >
+      {star === Math.ceil(testimonial.stars) && testimonial.stars % 1 !== 0 ? (
+        <defs>
+          <linearGradient id={`half-${index}-${star}`}>
+            <stop offset="50%" stopColor="currentColor" />
+            <stop offset="50%" stopColor="#D1D5DB" />
+          </linearGradient>
+        </defs>
+      ) : null}
+      <path 
+        fill={star === Math.ceil(testimonial.stars) && testimonial.stars % 1 !== 0 ? `url(#half-${index}-${star})` : 'currentColor'}
+        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" 
+      />
+    </svg>
+  ))}
+</div>
                     </div>
                   </div>
                 ))}
@@ -911,8 +946,8 @@ export default function ShikshamiLanding() {
                 key={subject}
                 onClick={() => setActiveTab(subject)}
                 className={`px-6 py-3 font-semibold rounded transition-all ${activeTab === subject
-                    ? 'bg-amber-600 text-white shadow-md'
-                    : 'bg-white text-gray-700 hover:bg-stone-100 border-2 border-stone-200'
+                  ? 'bg-amber-600 text-white shadow-md'
+                  : 'bg-white text-gray-700 hover:bg-stone-100 border-2 border-stone-200'
                   }`}
               >
                 {subject}
@@ -966,12 +1001,12 @@ export default function ShikshamiLanding() {
             Join over 12,500 successful students. Limited seats available for the 2025 batch.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-10 py-5 bg-white text-amber-700 rounded font-bold text-lg shadow-2xl hover:bg-amber-50 transition-all">
+            <a href="/signin" className="px-10 py-5 bg-white text-amber-700 rounded font-bold text-lg shadow-2xl hover:bg-amber-50 transition-all">
               Enroll Now
-            </button>
-            <button className="px-10 py-5 bg-transparent text-white rounded font-bold text-lg border-2 border-white hover:bg-white/10 transition-all">
+            </a>
+            <a href="/contact" className="px-10 py-5 bg-transparent text-white rounded font-bold text-lg border-2 border-white hover:bg-white/10 transition-all">
               Schedule Call Back
-            </button>
+            </a>
           </div>
         </div>
       </section>

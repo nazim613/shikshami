@@ -29,6 +29,8 @@ export default function Footer() {
               <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Mathematics</a></li>
               <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Science</a></li>
               <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">Social Science</a></li>
+              <li><a href="/#curriculum" className="text-gray-400 hover:text-white transition-colors">English</a></li>
+
             </ul>
           </div>
 

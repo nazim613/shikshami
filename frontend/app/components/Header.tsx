@@ -28,7 +28,7 @@ export default function Header() {
               </div>
               <div>
                 <div className="text-2xl font-serif font-bold text-gray-900">Shikshami</div>
-                <div className="text-xs text-gray-600 tracking-wider">CBSE Board Excellence</div>
+                <div className="text-xs text-gray-600 tracking-wider">Where Education Meets Excellence</div>
               </div>
             </a>
             
@@ -45,9 +45,9 @@ export default function Header() {
               <a href="/contact" className="hidden md:block text-sm font-semibold text-gray-700 hover:text-amber-700 transition-colors">
                 Contact
               </a>
-              <button className="px-6 py-2.5 bg-amber-600 text-white text-sm font-semibold rounded hover:bg-amber-700 transition-all shadow-md hover:shadow-lg">
+              <a href="/signin" className="px-6 py-2.5 bg-amber-600 text-white text-sm font-semibold rounded hover:bg-amber-700 transition-all shadow-md hover:shadow-lg">
                 Sign in
-              </button>
+              </a>
             </div>
           </div>
         </div>

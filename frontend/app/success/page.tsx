@@ -100,24 +100,9 @@ export default function SuccessStories() {
 
   const galleryImages = [
     { url: '/Single-01.png', alt: 'Student Review 1' },
-    { url: '/Single-02.png', alt: 'Student Review 2' },
-    { url: '/Single-03.png', alt: 'Student Review 3' },
-    { url: '/Single-04.png', alt: 'Student Review 4' },
+    { url: '/Single-11.png', alt: 'Student Review 11' },
     { url: '/Single-05.png', alt: 'Student Review 5' },
-    { url: '/Single-06.png', alt: 'Student Review 6' },
-    { url: '/Single-07.png', alt: 'Student Review 7' },
-    { url: '/Single-08.png', alt: 'Student Review 8' },
-    { url: '/Single-09.png', alt: 'Student Review 9' },
-    { url: '/Single-10.png', alt: 'Student Review 10' },
-    { url: '/Single-12.png', alt: 'Student Review 11' },
-    { url: '/Single-13.png', alt: 'Student Review 12' },
-    { url: '/Single-14.png', alt: 'Student Review 13' },
-    { url: '/Single-15.png', alt: 'Student Review 14' },
-    { url: '/Single-16.png', alt: 'Student Review 15' },
-    { url: '/Single-17.png', alt: 'Student Review 16' },
-    { url: '/Single-18.png', alt: 'Student Review 17' },
-    { url: '/Single-19.png', alt: 'Student Review 18' },
-    { url: '/Single-20.png', alt: 'Student Review 19' },
+    { url: '/Single-04.png', alt: 'Student Review 4' }
   ]
 
   const whatsappMessages = [
@@ -157,9 +142,9 @@ export default function SuccessStories() {
             </p>
 
             <div className="mt-12 flex flex-wrap gap-4 justify-center">
-              <button className="px-10 py-5 bg-white text-amber-700 font-bold text-lg rounded-lg shadow-2xl hover:bg-amber-50 transition-all transform hover:scale-105">
+              <a href="/signin" className="px-10 py-5 bg-white text-amber-700 font-bold text-lg rounded-lg shadow-2xl hover:bg-amber-50 transition-all transform hover:scale-105">
                 Start Your Success Story →
-              </button>
+              </a>
               <a href="/#pricing" className="px-10 py-5 bg-transparent text-white font-bold text-lg rounded-lg border-2 border-white hover:bg-white/10 transition-all">
                 View Packages
               </a>
